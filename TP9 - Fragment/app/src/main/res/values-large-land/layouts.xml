@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<item name="user_info_layout" type="layout">@layout/user_info_portrait_layout</item>-->
+    <bool name="isTablet">true</bool>
+    <bool name="isPortrait">false</bool>
+</resources>

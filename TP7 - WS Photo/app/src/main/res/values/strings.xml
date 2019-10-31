@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Client Photo</string>
+
+    <string name="start">start</string>
+    <string name="show">show</string>
+    <string name="action_settings">Settings</string>
+</resources>
