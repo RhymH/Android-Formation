@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BluetoothClientServer</string>
+    <string name="action_settings">Settings</string>
+    <string name="Text">Status: -</string>
+    <string name="on">Turn On</string>
+    <string name="off">Turn Off</string>
+    <string name="List">List paired Devices</string>
+    <string name="Find">Search new Devices</string>
+    <string name="cancelSearch">Cancel search</string>
+    <string name="startServer">Start Server</string>
+    <string name="startClient">Start Client</string>
+    <string name="discover">Discover</string>
+    <string name="permission_failure">You don\'t have the permission to make Bluetooth Discovery</string>
+
+</resources>
