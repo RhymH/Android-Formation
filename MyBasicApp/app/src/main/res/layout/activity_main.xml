@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_custom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dip"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="17dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Add"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Substract"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/my_custom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dip"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="17dp">
+
+        <Button
+            android:id="@+id/showPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Show PopUp" />
+
+        <Button
+            android:id="@+id/showSnackBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Show SnackBar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/openActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/my_custom_border"
+        android:orientation="vertical"
+        android:padding="20dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/openActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Activity1" />
+
+            <Button
+                android:id="@+id/openActivityForResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Activity2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultFromActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>
