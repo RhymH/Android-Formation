@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 {
     public static final int REQUEST_CODE = 4567;
     public static final String MESSAGE_PARAMETER = "message";
+
+
     private Button m_addButton;
     private Button m_subButton;
     private TextView m_resultTv;
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Log.v("MainActivity", ">onClick");
+
         if( view == m_addButton) {
             Log.v("MainActivity", ">onClick : Add button clicked");
             String resultStrg = m_resultTv.getText().toString();

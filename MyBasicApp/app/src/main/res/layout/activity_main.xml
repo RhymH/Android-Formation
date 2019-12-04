@@ -24,28 +24,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:text="Add"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="96dp" />
+            android:text="Add" />
 
         <Button
             android:id="@+id/subButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:text="Substract"
-            tools:layout_editor_absoluteX="121dp"
-            tools:layout_editor_absoluteY="78dp" />
+            android:text="Substract" />
 
         <TextView
             android:id="@+id/resultTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="0" />
     </LinearLayout>
 
     <LinearLayout
