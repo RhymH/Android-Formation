@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends Activity {
 
     private Button m_startButton= null;
     private TextView m_counterView= null;
@@ -19,28 +19,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private SeekBar m_mySeekBar;
     private ProgressBar m_myProgressBar;
     private TextView m_myProgressTextView;
-//    private View.OnClickListener m_myButtonClick = new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            showToast();;
-//        }
-//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        m_counterView = (TextView)this.findViewById(R.id.counter);
-        m_startButton = (Button)this.findViewById(R.id.start);
+        m_counterView = this.findViewById(R.id.counter);
+        m_startButton = this.findViewById(R.id.start);
 
 
-        m_startButton.setOnClickListener(this);
-//        m_startButton.setOnClickListener(m_myButtonClick);
-
-        m_myProgressTextView = (TextView)this.findViewById(R.id.progressValueTextView);
-        m_myProgressBar = (ProgressBar) this.findViewById(R.id.myProgressBar);
-        m_mySeekBar = (SeekBar)this.findViewById(R.id.mySeekBar);
+        m_myProgressTextView = this.findViewById(R.id.progressValueTextView);
+        m_myProgressBar = this.findViewById(R.id.myProgressBar);
+        m_mySeekBar = this.findViewById(R.id.mySeekBar);
         m_mySeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -61,8 +52,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         });
     }
 
-    @Override
-    public void onClick(View view) {
+    public void onStartClick(View view) {
         if( view == m_startButton)
         {
             // Step 1 ;
@@ -103,4 +93,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         }
     }
+
 }

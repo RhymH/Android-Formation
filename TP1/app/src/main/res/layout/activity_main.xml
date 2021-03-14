@@ -53,6 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:id="@+id/start"
+        android:onClick="onStartClick"
         android:text="@string/start"
         android:layout_gravity="bottom"/>
 
