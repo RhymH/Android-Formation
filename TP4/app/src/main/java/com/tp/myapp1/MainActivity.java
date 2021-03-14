@@ -8,7 +8,6 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -69,8 +68,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         if( !m_counting) {
             m_counting = true;
             m_startButton.setText("Stop");
-            m_timer = new Timer();
-            m_timer.scheduleAtFixedRate(new MyTimerTask(), new Date(), 200);
+//            m_timer = new Timer();
+//            m_timer.scheduleAtFixedRate(new MyTimerTask(), new Date(), 200);
         }
         else {
             m_counting = false;

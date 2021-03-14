@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
         public void onServiceConnected(ComponentName className, IBinder service)
         {
             m_service = new Messenger(service);
-            m_serviceInfoView.setText("Attached.");
+            m_serviceInfoView.setText("Connected.");
 
             sendMsgToService(MyTestService.MSG_REGISTER_CLIENT);
         }
@@ -219,7 +219,7 @@ public class MainActivity extends Activity {
             // Detach our existing connection.
             unbindService(m_connection);
             m_isBound = false;
-            m_myProgressTextView.setText("Unbinding.");
+            m_serviceInfoView.setText("Disconnected.");
         }
     }
 }

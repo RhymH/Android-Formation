@@ -35,21 +35,27 @@ public class ThirdActivity extends AppCompatActivity {
     public void onClick(View view) {
         Log.v("ThirdActivity", ">onClick");
         if( view == m_yesButton) {
-            Log.v("ThirdActivity", ">onClick : Add button clicked");
-            Intent returnIntent = new Intent();
-            returnIntent.putExtra("result", "I am READY");
-            setResult(Activity.RESULT_OK,returnIntent);
-            finish();
         } else if( view == m_noButton) {
-            Log.v("ThirdActivity", ">onClick : Substract button clicked");
-            Intent intent = new Intent();
-            intent.putExtra("result", "I am NOT READY");
-            setResult(Activity.RESULT_CANCELED, intent);
-            finish();
         }
     }
 
     @Override
     public void onBackPressed() {
+    }
+
+    public void onClickYes(View view) {
+        Log.v("ThirdActivity", ">onClick : Add button clicked");
+        Intent returnIntent = new Intent();
+        returnIntent.putExtra("result", "I am READY");
+        setResult(Activity.RESULT_OK,returnIntent);
+        finish();
+    }
+
+    public void onClickNo(View view) {
+        Log.v("ThirdActivity", ">onClick : Substract button clicked");
+        Intent intent = new Intent();
+        intent.putExtra("result", "I am NOT READY");
+        setResult(Activity.RESULT_CANCELED, intent);
+        finish();
     }
 }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-Formation-TP5.iml" filepath="$PROJECT_DIR$/Android-Formation-TP5.iml" group="TP5" />
       <module fileurl="file://$PROJECT_DIR$/TP5.iml" filepath="$PROJECT_DIR$/TP5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TP5.iml" filepath="$PROJECT_DIR$/TP5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TP5/app" />
     </modules>
   </component>
 </project>

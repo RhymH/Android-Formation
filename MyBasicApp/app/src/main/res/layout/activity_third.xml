@@ -30,14 +30,14 @@
             android:id="@+id/yesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
+            android:onClick="onClickYes"
             android:text="Yes" />
 
         <Button
             android:id="@+id/noButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
+            android:onClick="onClickNo"
             android:text="No" />
     </LinearLayout>
 

@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String resultStrg = m_resultTv.getText().toString();
             int result = Integer.valueOf(resultStrg);
             result++;
-            m_resultTv.setText(String.format("%d",result));
+            m_resultTv.setText(Integer.toString(result));
         } else if( view == m_subButton) {
             Log.v("MainActivity", ">onClick : Substract button clicked");
             String resultStrg = m_resultTv.getText().toString();

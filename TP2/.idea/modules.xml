@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-Formation-TP2.iml" filepath="$PROJECT_DIR$/Android-Formation-TP2.iml" group="TP2" />
       <module fileurl="file://$PROJECT_DIR$/TP2.iml" filepath="$PROJECT_DIR$/TP2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TP2/app" />
     </modules>
   </component>
 </project>

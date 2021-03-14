@@ -47,19 +47,25 @@
 
     </LinearLayout>
 
-    <Button
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:id="@+id/start"-->
+<!--        android:text="@string/start"-->
+<!--        android:layout_gravity="bottom"/>-->
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/start"
-        android:text="@string/start"
+        android:id="@+id/toggleStart"
+        android:onClick="onClick"
         android:layout_gravity="bottom"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/start"
+        android:layout_above="@id/toggleStart"
         android:id="@+id/counter"
         android:layout_centerHorizontal="true"
         android:text="" />

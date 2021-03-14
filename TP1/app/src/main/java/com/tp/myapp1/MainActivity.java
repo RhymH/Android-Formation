@@ -66,13 +66,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         if( view == m_startButton)
         {
             // Step 1 ;
-//            showToast();
+            showToast();
             // Step 2 ;
 //            showSnackBar();
             // Step 3 ;
 //            incrementAndDisplayCounter();
             // Step 4 ;
-            loopIncrementAndDisplayCounter();
+//            loopIncrementAndDisplayCounter();
         }
     }
 
